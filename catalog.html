@@ -4,25 +4,29 @@
 <head>
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
 <body>
-	<header>
+	<header class="header">
 		<section>
 			<a href="index.html"><img src="img/logo.svg" alt="device"></a>
 			<form action="https://echo.htmlacademy.ru/" method="get">
 				<input type="text" name="search" id="search" placeholder="Поиск по сайту">
 				<button type="submit">Искать</button>
 			</form>
-			<a href="#">Валентин Петухов</a>
-			<a href="#">Выйти</a>
-			<a href="#">Сравнить</a>
-			<a href="#">Корзина</a>
+			<ul class="header-user">
+				<li><a href="#">Валентин Петухов</a></li>
+				<li class="user-exit"><a href="#">Выйти</a></li>
+				<li><a href="#">Сравнить</a></li>
+				<li><a href="#">Корзина</a></li>
+			</ul>
 
 			<nav class="menu">
 				<ul>
-					<li><a href="catalog.html">Каталог товаров</a></li>
+					<li><a href="catalog.html" class="menu-catalog">Каталог товаров</a></li>
 					<li><a href="#">Доставка</a></li>
 					<li><a href="#">Гарантия</a></li>
 					<li><a href="#">Контакты</a></li>
@@ -31,7 +35,7 @@
 		</section>
 	</header>
 
-	<main>
+	<main class="main">
 		<h1 class="visually-hidden">Интернет-магазин Device</h1>
 		<h2>Моноподы для селфи</h2>
 
@@ -39,13 +43,14 @@
 			<ul>
 				<li><a href="index.html">Главная</a></li>
 				<li><a href="catalog.html">Каталог товаров</a></li>
-				<li>Моноподы для селфи</li>
+				<li><a>Моноподы для селфи</a></li>
 			</ul>
 		</section>
 
 		<section class="filter">
+			<h3>Фильтр:</h3>
 			<form action="https://echo.htmlacademy.ru/" method="get">
-				<fieldset class="price">
+				<fieldset class="filter-price">
 					<legend>Стоимость:</legend>
 					<input type="range" name="range-price" value="3500" min="0" max="5000">
 					<label>
@@ -58,7 +63,7 @@
 					</label>
 				</fieldset>
 
-				<fieldset class="color">
+				<fieldset class="filter-color">
 					<legend>Цвет</legend>
 					<ul>
 						<li>
@@ -94,7 +99,7 @@
 					</ul>
 				</fieldset>
 
-				<fieldset class="bluetooth">
+				<fieldset class="filter-bluetooth">
 					<legend>Bluetooth</legend>
 					<ul>
 						<li>
@@ -111,17 +116,17 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button type="submit">Показать</button>
+				<button type="submit" class="control">Показать</button>
 			</form>
 		</section>
 
 		<section class="sort">
 			<h2>Сортировка:</h2>
-			<a href="#">По цене</a>
+			<a href="#" class="active sort-type">По цене</a>
 			<a href="#">По типу</a>
 			<a href="#">По популярности</a>
-			<a href="#">По возрастанию</a>
-			<a href="#">По убыванию</a>
+			<a href="#" class="sort-dir">По возрастанию</a>
+			<a href="#" class="sort-dir active">По убыванию</a>
 		</section>
 
 		<section class="content">
@@ -129,32 +134,32 @@
 				<li>
 					<article class="item">
 						<img src="img/item-monopod-classic.jpg" alt="Любительская селфи-палка" width="360" height="380">
-						<p><a href="#">Любительская селфи-палка</a><span class="price">500 руб.</span></p>
-						<a href="" class="buy">В корзину</a>
+						<p><a href="#" class="item-name">Любительская селфи-палка</a><span class="price">500 руб.</span></p>
+						<a href="" class="buy control">В корзину</a>
 						<a href="" class="add-favorite">Добавить к сравнению</a>
 					</article>
 				</li>
 				<li>
 					<article class="item">
 						<img src="img/item-monopod-pro.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
-						<p><a href="#">Профессиональная селфи-палка</a><span class="price">1 500 руб.</span></p>
-						<a href="" class="buy">В корзину</a>
+						<p><a href="#" class="item-name">Профессиональная селфи-палка</a><span class="price">1 500 руб.</span></p>
+						<a href="" class="buy control">В корзину</a>
 						<a href="" class="add-favorite">Добавить к сравнению</a>
 					</article>
 				</li>
 				<li>
 					<article class="item">
 						<img src="img/item-monopod-aqua.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
-						<p><a href="#">Непотопляемая селфи-палка</a><span class="price">2 500 руб.</span></p>
-						<a href="" class="buy">В корзину</a>
+						<p><a href="#" class="item-name">Непотопляемая селфи-палка</a><span class="price">2 500 руб.</span></p>
+						<a href="" class="buy control">В корзину</a>
 						<a href="" class="add-favorite">Добавить к сравнению</a>
 					</article>
 				</li>
 				<li>
 					<article class="item new">
 						<img src="img/item-monopod-followme.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
-						<p><a href="#">Селфи-палка «Следуй за мной»</a><span class="price">4 900 руб.</span></p>
-						<a href="" class="buy">В корзину</a>
+						<p><a href="#" class="item-name">Селфи-палка «Следуй за мной»</a><span class="price">4 900 руб.</span></p>
+						<a href="" class="buy control">В корзину</a>
 						<a href="" class="add-favorite">Добавить к сравнению</a>
 					</article>
 				</li>
@@ -163,20 +168,21 @@
 
 		<section class="pagination">
 			<a class="prev">Назад</a>
-			<a>1</a>
+			<a class="current">1</a>
 			<a href="#">2</a>
 			<a href="#">3</a>
 			<a class="next" href="#">Вперед</a>
 		</section>
 	</main>
 
-	<footer>
+	<footer class="footer">
 		<a href="index.html"><img src="img/logo.svg" alt="device"></a>
-		<a href="#">Валентин Петухов</a>
-		<a href="#">Выйти</a>
-		<a href="#">Сравнить</a>
-		<a href="#">Корзина</a>
-
+		<ul class="footer-user">
+			<li><a href="#">Валентин Петухов</a></li>
+			<li><a href="#">Выйти</a></li>
+			<li><a href="#">Сравнить</a></li>
+			<li><a href="#">Корзина</a></li>
+		</ul>
 		<p>г. Москва, ул. Строителей, 15</p>
 		<nav class="menu-footer">
 			<ul>
@@ -185,9 +191,9 @@
 				<li><a href="#">Контакты</a></li>
 			</ul>
 		</nav>
-		<p>Тел.: <a href="tel+74954959595">+7 (495) 495-95-95</a></p>
+		<p>Тел.: <a href="tel+74954959595" class="call-us">+7 (495) 495-95-95</a></p>
 
-		<ul>
+		<ul class="social">
 			<li><a href="#">Facebook</a></li>
 			<li><a href="#">Instagram</a></li>
 			<li><a href="#">Twitter</a></li>
