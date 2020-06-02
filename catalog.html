@@ -12,10 +12,10 @@
 <body>
 	<header class="header">
 		<section>
-			<a href="index.html"><img src="img/logo.svg" alt="device"></a>
-			<form action="https://echo.htmlacademy.ru/" method="get">
-				<input type="text" name="search" id="search" placeholder="Поиск по сайту">
-				<button type="submit">Искать</button>
+			<a class="logo" href="index.html"><img src="img/logo.svg" alt="device"></a>
+			<form  action="https://echo.htmlacademy.ru/" method="get">
+				<input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+				<button type="submit" class="search-button">Искать</button>
 			</form>
 			<ul class="header-user">
 				<li><a href="#">Валентин Петухов</a></li>
@@ -116,7 +116,7 @@
 						</li>
 					</ul>
 				</fieldset>
-				<button type="submit" class="control">Показать</button>
+				<button type="submit" class="control filter-button">Показать</button>
 			</form>
 		</section>
 
@@ -167,16 +167,18 @@
 		</section>
 
 		<section class="pagination">
-			<a class="prev">Назад</a>
-			<a class="current">1</a>
-			<a href="#">2</a>
-			<a href="#">3</a>
-			<a class="next" href="#">Вперед</a>
+			<ul>
+				<li class=""><a>Назад</a></li>
+				<li class="current"><a>1</a></li>
+				<li class="page-num"><a href="#">2</a></li>
+				<li class="page-num"><a href="#">3</a></li>
+				<li class="next"><a  href="#">Вперед</a></li>
+			</ul>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<a href="index.html"><img src="img/logo.svg" alt="device"></a>
+		<a class="logo" href="index.html"><img src="img/logo.svg" alt="device"></a>
 		<ul class="footer-user">
 			<li><a href="#">Валентин Петухов</a></li>
 			<li><a href="#">Выйти</a></li>
@@ -199,7 +201,7 @@
 			<li><a href="#">Twitter</a></li>
 		</ul>
 
-		<img src="img/logo-html.png" alt="Разработчик" width="27" height="34"/>
+		<a href="#"><img class="developed-by" src="img/logo-html.png" alt="Разработчик" width="27" height="34"/></a>
 	</footer>
 
 	<section class="menu-popup">

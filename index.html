@@ -12,10 +12,10 @@
 <body>
 	<header class="header">
 		<section>
-			<a><img src="img/logo.svg" alt="device"></a>
+			<a class="logo"><img src="img/logo.svg" alt="device"></a>
 			<form  action="https://echo.htmlacademy.ru/" method="get">
 				<input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
-				<button type="submit">Искать</button>
+				<button type="submit" class="search-button">Искать</button>
 			</form>
 			<ul class="header-guest">
 				<li><a href="#">Войти</a></li>
@@ -43,7 +43,7 @@
 					<h2>Делай селфи, как Бен Стиллер!</h2>
 					<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
 					<a href="#"><img src="img/slider-monopod.png" alt="монопод" width="384" height="486"></a>	
-					<a href="#" class="control">Подробнее</a>
+					<a href="#" class="control slider-more">Подробнее</a>
 					<dl>
 						<dt>8,5 м</dt>
 						<dd>Длина палки</dd>
@@ -60,7 +60,7 @@
 					<h2>Худеем правильно!</h2>
 					<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
 					<a href="#"><img src="img/slider-band.png" alt="умный браслет" width="345" height="485"></a>	
-					<a href="#" class="control">Подробнее</a>
+					<a href="#" class="control slider-more">Подробнее</a>
 					<dl>
 						<dt>48 часов</dt>
 						<dd>Без подзарядки</dd>
@@ -71,7 +71,7 @@
 					<h2>Порхает как бабочка, жалит как пчела!</h2>
 					<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
 					<a href="#"><img src="img/slider-quadro.png" alt="квадрокоптер" width="526" height="334"></a>	
-					<a href="#" class="control">Подробнее</a>
+					<a href="#" class="control slider-more">Подробнее</a>
 					<dl>
 						<dt>800 м</dt>
 						<dd>Дальность полета</dd>
@@ -96,9 +96,9 @@
 
 		<section class="services">
 			<ul>
-				<li><button type="button" class="control">Доставка</button></li>
-				<li><button type="button" class="control">Гарантия</button></li>
-				<li><button type="button" class="control">Кредит</button></li>
+				<li><button type="button" class="control service-control">Доставка</button></li>
+				<li><button type="button" class="control service-control">Гарантия</button></li>
+				<li><button type="button" class="control service-control selected">Кредит</button></li>
 			</ul>
 			<ul>
 				<li class="delivery">
@@ -123,7 +123,7 @@
 				<li><a href="#"><img src="img/vendor-gopro.png" alt="gopro" height="100"></a></li>
 				<li><a href="#"><img src="img/vendor-vive.png" alt="vive" height="100"></a></li>
 			</ul>
-	</section>
+		</section>
 
 		<section class="info">
 			<h2>О нас</h2>
@@ -135,7 +135,7 @@
 				<li>Автотрейдинг</li>
 				<li>ЖелДорЭкспедиция</li>
 			</ul>
-			<a href="#" class="control">Подробнее о нас</a>
+			<a href="#" class="control info-control">Подробнее о нас</a>
 		</section>
 
 
@@ -143,12 +143,12 @@
 			<h2>Контакты</h2>
 			<p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
 			<a href="#"><img src="img/map.jpg" alt="карта" width="560" height="222"></a>
-			<a href="#" class="control">Напишите нам</a>
+			<a href="#" class="control contact-control">Напишите нам</a>
 		</section>
 	</main>
 
 	<footer class="footer">
-		<a href="index.html"><img src="img/logo.svg" alt="device"></a>
+		<a class="logo"><img src="img/logo.svg" alt="device"></a>
 		<ul class="footer-guest">
 			<li><a href="#">Войти</a></li>
 			<li><a href="#">Сравнить</a></li>
@@ -171,7 +171,7 @@
 			<li><a href="#">Twitter</a></li>
 		</ul>
 
-		<img src="img/logo-html.png" alt="Разработчик" width="27" height="34"/>
+		<a href="#"><img class="developed-by" src="img/logo-html.png" alt="Разработчик" width="27" height="34"/></a>
 	</footer>
 
 	<form action="https://echo.htmlacademy.ru/" method="post" class="write-us">
@@ -187,7 +187,7 @@
 			Текст письма:
 			<textarea name="letter" rows="5">В свободной форме</textarea>
 		</label>
-		<button type="submit" class="control">Отправить</button>
+		<button type="submit" class="control write-us-button">Отправить</button>
 		<button type="button">Закрыть</button>
 	</form>
 
