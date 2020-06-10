@@ -1,4 +1,4 @@
-.visually-hidden {
+.visually-hidden{
   position: absolute;
 
   width: 1px;
@@ -359,7 +359,7 @@
 	line-height: 20px;
 }
 
-.user-exit a{
+.logout a{
 	color: var(--form-grey,rgba(0, 0, 0, 0.3));
 }
 
@@ -392,35 +392,37 @@ a.menu-catalog{
 }
 
 .logo:hover,
-.menu li:hover,
-.menu-footer li:hover,
-.header-guest li:hover,
-.footer-guest li:hover,
-.menu-popup li:hover,
+.menu a:hover,
+.menu-footer a:hover,
+.header-guest a:hover,
+.header-user a:hover,
+.footer-guest a:hover,
+.menu-popup a:hover,
 .developed-by:hover,
 .pagination .page-num:hover{
 	opacity: 0.6;
 }
 
 .logo:active,
-.menu li:active,
-.menu-footer li:active,
-.header-guest li:active,
-.footer-guest li:active,
-.menu-popup li:active,
-.popular li:active,
+.menu a:active,
+.menu-footer a:active,
+.header-guest a:active,
+.header-user a:active,
+.footer-guest a:active,
+.menu-popup a:active,
+.popular a:active,
 .developed-by:active,
 .pagination .page-num:active{
 	opacity: 0.3;
 }
 
-.breadcrumbs li:hover,
-.social li:hover{
+.breadcrumbs a:hover,
+.social a:hover{
 	opacity: 0.6;
 }
 
-.breadcrumbs li:active,
-.social li:active{
+.breadcrumbs a:active,
+.social a:active{
 	opacity: 0.1;
 }
 
