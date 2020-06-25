@@ -9,44 +9,43 @@
 	<link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 
-<body>
-	<header class="header">
-		<section>
-			<a class="logo" href="index.html"><img src="img/logo.svg" alt="device"></a>
-			<form  action="https://echo.htmlacademy.ru/" method="get">
-				<input class="logout" type="text" name="search" id="search" placeholder="Поиск по сайту">
-				<button type="submit" class="search-button">Искать</button>
-			</form>
-			<div class="header-user">
-				<a href="#">Валентин Петухов</a>
-				<a class="logout" href="#">Выйти</a>
-				<a href="#">Сравнить</a>
-				<a href="#">Корзина</a>
-			</div>
-
-			<nav class="menu">
-				<ul>
-					<li><a href="catalog.html" class="menu-catalog">Каталог товаров</a></li>
-					<li><a href="#">Доставка</a></li>
-					<li><a href="#">Гарантия</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-			</nav>
-		</section>
+<body class="body">
+	<header>
+		<div class="container">
+			<section class="header">
+				<a href="index.html" class="logo"><img src="img/logo.svg" alt="device"></a>
+				<form  action="https://echo.htmlacademy.ru/" method="get" class="search">
+					<input class="search-input" type="text" name="search" id="search" placeholder="Поиск по сайту">
+					<button type="submit" class="search-button">Искать</button>
+				</form>
+				<div class="header-user">
+					<a href="#">Валентин Петухов</a>
+					<a class="logout" href="#">Выйти</a>
+					<a href="#">Сравнить</a>
+					<a href="#">Корзина</a>
+				</div>
+				<nav class="menu">
+					<ul>
+						<li><a class="menu-catalog" href="catalog.html">Каталог товаров</a></li>
+						<li><a href="#">Доставка</a></li>
+						<li><a href="#">Гарантия</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</nav>
+			</section>
+		</div>
 	</header>
 
-	<main class="main">
+	<main class="main-wrapper">
 		<h1 class="visually-hidden">Интернет-магазин Device</h1>
-		<h2>Моноподы для селфи</h2>
+		<h2 >Моноподы для селфи</h2>
 
-		<section class="breadcrumbs">
-			<ul>
-				<li><a href="index.html">Главная</a></li>
-				<li><a href="catalog.html">Каталог товаров</a></li>
-				<li><a>Моноподы для селфи</a></li>
-			</ul>
-		</section>
-
+		<ul class="breadcrumbs">
+			<li><a href="index.html">Главная</a></li>
+			<li><a href="catalog.html">Каталог товаров</a></li>
+			<li><a>Моноподы для селфи</a></li>
+		</ul>
+		
 		<section class="filter">
 			<h3>Фильтр:</h3>
 			<form action="https://echo.htmlacademy.ru/" method="get">
@@ -130,7 +129,7 @@
 		</section>
 
 		<section class="content">
-			<ul>
+			<ul class="item-list">
 				<li>
 					<article class="item">
 						<img src="img/item-monopod-classic.jpg" alt="Любительская селфи-палка" width="360" height="380">
@@ -166,25 +165,24 @@
 			</ul>
 		</section>
 
-		<section class="pagination">
-			<ul>
-				<li class=""><a>Назад</a></li>
-				<li class="current"><a>1</a></li>
-				<li class="page-num"><a href="#">2</a></li>
-				<li class="page-num"><a href="#">3</a></li>
-				<li class="next"><a  href="#">Вперед</a></li>
-			</ul>
-		</section>
+		<ul class="pagination">
+			<li class=""><a>Назад</a></li>
+			<li class="current"><a>1</a></li>
+			<li class="page-num"><a href="#">2</a></li>
+			<li class="page-num"><a href="#">3</a></li>
+			<li class="next"><a  href="#">Вперед</a></li>
+		</ul>
 	</main>
 
 	<footer class="footer">
-		<a class="logo" href="index.html"><img src="img/logo.svg" alt="device"></a>
+		<a class="logo"><img src="img/logo.svg" alt="device"></a>
 		<ul class="footer-user">
 			<li><a href="#">Валентин Петухов</a></li>
 			<li><a href="#">Выйти</a></li>
 			<li><a href="#">Сравнить</a></li>
 			<li><a href="#">Корзина</a></li>
 		</ul>
+
 		<p>г. Москва, ул. Строителей, 15</p>
 		<nav class="menu-footer">
 			<ul>
@@ -204,15 +202,15 @@
 		<a href="#"><img class="developed-by" src="img/logo-html.png" alt="Разработчик" width="27" height="34"/></a>
 	</footer>
 
-	<section class="menu-popup">
-		<ul>
+	<div>
+		<ul class="menu-popup">
 			<li><a href="#">Виртуальная реальность</a></li>
-			<li><a href="#">Моноподы для селфи</a></li>
-			<li><a href="#">Экшн-камеры</a></li>
 			<li><a href="#">Фитнес-браслеты</a></li>
-			<li><a href="#">Умные часы</a></li>
 			<li><a href="#">Квадрокоптер</a></li>
+			<li><a href="#">Моноподы для селфи</a></li>
+			<li class="grid-columns2"><a href="#">Умные часы</a></li>
+			<li class="grid-columns3"><a href="#">Экшн-камеры</a></li>
 		</ul>
-	</section>
+	</div>
 </body>
 </html>
