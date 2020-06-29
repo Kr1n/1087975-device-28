@@ -175,7 +175,7 @@ a{
 	letter-spacing: 0.1em;
 }
 
-.filter form,
+.filter,
 .sort{
 	padding:0;
 	margin: 0;
@@ -385,7 +385,7 @@ a{
 	letter-spacing: 0.1em;
 }
 
-.main-wrapper{
+.main-wrapper .container{
 	display: grid;
 	grid-template-columns: 328px 1fr;
 	grid-template-rows: auto auto auto auto auto;
@@ -756,7 +756,7 @@ input[type="radio"]:checked:active{
 	content: "";
 	top: 0;
 	width: 100%;
-	height: 50%;
+	height: 100%;
 	background-color: var(--basic-grey-light, #e5e5e5);
 	z-index: -2;
 }
