@@ -627,6 +627,7 @@ a{
 	padding: 0;
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	grid-gap: 36px;
 }
 
 .footer-address{
