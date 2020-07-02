@@ -95,45 +95,53 @@
 			<div class="container">
 				<h1 class="visually-hidden">Интернет-магазин Device</h1>
 				
-				<ul class="slider">
-					<li class="slider-item active">
-						<a href="#" class="slider-image"><img src="img/slider-monopod.png" alt="монопод" width="384" height="486"></a>
-						<h2 class="slider-header-monopod">Делай селфи, как Бен Стиллер!</h2>
-						<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
-						<a href="#" class="control slider-more">Подробнее</a>
-						<dl class="slider-info">
-							<dt>8,5 м</dt>
-							<dd>Длина палки</dd>
-							<dt>5 кг</dt>
-							<dd>Вес палки</dd>
-							<dt>Карбон</dt>
-							<dd>Материал</dd>
-						</dl>
-					</li>
+				<div class="slider-wrapper">
+					<ul class="slider">
+						<li class="slider-item active">
+							<a href="#" class="slider-image"><img src="img/slider-monopod.png" alt="монопод" width="384" height="486"></a>
+							<h2 class="slider-header-monopod">Делай селфи, как Бен Стиллер!</h2>
+							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
+							<a href="#" class="control slider-more">Подробнее</a>
+							<dl class="slider-info">
+								<dt>8,5 м</dt>
+								<dd>Длина палки</dd>
+								<dt>5 кг</dt>
+								<dd>Вес палки</dd>
+								<dt>Карбон</dt>
+								<dd>Материал</dd>
+							</dl>
+						</li>
 
-					<li class="slider-item">
-						<a href="#" class="slider-image"><img src="img/slider-band.png" alt="умный браслет" width="345" height="485"></a>
-						<h2 class="slider-header-band">Худеем правильно!</h2>
-						<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
-						<a href="#" class="control slider-more">Подробнее</a>
-						<dl class="slider-info">
-							<dt>48 часов</dt>
-							<dd>Без подзарядки</dd>
-						</dl>
-					</li>
-					<li class="slider-item">
-						<a href="#" class="slider-image"><img src="img/slider-quadro.png" alt="квадрокоптер" width="526" height="334"></a>
-						<h2 class="slider-header-quadro">Порхает как бабочка, жалит как пчела!</h2>
-						<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
-						<a href="#" class="control slider-more">Подробнее</a>
-						<dl class="slider-info">
-							<dt>800 м</dt>
-							<dd>Дальность полета</dd>
-							<dt>50 м</dt>
-							<dd>Радиус поражения</dd>
-						</dl>
-					</li>
-				</ul>
+						<li class="slider-item">
+							<a href="#" class="slider-image"><img src="img/slider-band.png" alt="умный браслет" width="345" height="485"></a>
+							<h2 class="slider-header-band">Худеем правильно!</h2>
+							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы не пропускать занятия и соблюдать диету.</p>
+							<a href="#" class="control slider-more">Подробнее</a>
+							<dl class="slider-info">
+								<dt>48 часов</dt>
+								<dd>Без подзарядки</dd>
+							</dl>
+						</li>
+
+						<li class="slider-item">
+							<a href="#" class="slider-image"><img src="img/slider-quadro.png" alt="квадрокоптер" width="526" height="334"></a>
+							<h2 class="slider-header-quadro">Порхает как бабочка, жалит как пчела!</h2>
+							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен мощным лазером, замаскированным под стандартную камеру.</p>
+							<a href="#" class="control slider-more">Подробнее</a>
+							<dl class="slider-info">
+								<dt>800 м</dt>
+								<dd>Дальность полета</dd>
+								<dt>50 м</dt>
+								<dd>Радиус поражения</dd>
+							</dl>
+						</li>
+					</ul>
+					<div class="slider-buttons">
+						<button value="1" type="button" aria-label="Первый слайд" class="active"></button>
+						<button value="2" type="button" aria-label="Второй слайд"></button>
+						<button value="3" type="button" aria-label="Трейтий слайд"></button>
+					</div>
+				</div>
 
 				<ul class="popular">
 					<li><a class="popular-vr" href="#">Виртуальная реальность</a></li>
@@ -262,9 +270,9 @@
 			<p class="footer-telephone">Тел.: <a href="tel+74954959595" class="call-us">+7 (495) 495-95-95</a></p>
 
 			<ul class="social">
-				<li><a href="#">Facebook</a></li>
-				<li><a href="#">Instagram</a></li>
-				<li><a href="#">Twitter</a></li>
+				<li><a href="#" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
+				<li><a href="#" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
+				<li><a href="#" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
 			</ul>
 
 			<a class="developed-by" href="#"><img src="img/logo-html.png" alt="Разработчик" width="27" height="34"/></a>
@@ -285,15 +293,22 @@
 			<textarea id="letter" name="letter" rows="5">В свободной форме</textarea>
 			
 			<button type="submit" class="control write-us-button">Отправить</button>
-			<button class="button-close" type="button" aria-label="Закрыть"></button>
+			<button class="button-close" type="button" aria-label="Закрыть">
+				<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<path d="M17.9499 19.725L9.9999 11.7625L2.0499 19.725L0.274902 17.95L8.2374 9.99997L0.274902 2.04996L2.0499 0.274963L9.9999 8.23747L17.9499 0.287464L19.7124 2.04996L11.7624 9.99997L19.7124 17.95L17.9499 19.725Z" fill="white"/>
+				</svg> 
+			</button>
 		</form>
 	</div>
 
-	<div class="container">
-		<div class="map-popup">
-			<img src="img/map-popup.jpg" alt="Карта" width="961" height="559">
-			<button class="button-close" type="button" aria-label="Закрыть"></button>
-		</div>
+	<div class="map-popup">
+		<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5349.395152772826!2d37.523581596068645!3d55.68649105024176!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46b54cf65f5c8955%3A0x694710ccd55501e!2z0YPQuy4g0KHRgtGA0L7QuNGC0LXQu9C10LksIDE1LCDQnNC-0YHQutCy0LAsIDExOTMxMQ!5e0!3m2!1sru!2sru!4v1593676971671!5m2!1sru!2sru" width="961" height="559" frameborder="0" allowfullscreen title="Офис компании находится по адресу город Москва, улица Строителей, дом 15">
+		</iframe>
+		<button class="button-close" type="button" aria-label="Закрыть">
+			<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+				<path d="M17.9499 19.725L9.9999 11.7625L2.0499 19.725L0.274902 17.95L8.2374 9.99997L0.274902 2.04996L2.0499 0.274963L9.9999 8.23747L17.9499 0.287464L19.7124 2.04996L11.7624 9.99997L19.7124 17.95L17.9499 19.725Z" fill="white"/>
+			</svg> 
+		</button>
 	</div>
 
 </body>
