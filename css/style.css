@@ -66,6 +66,10 @@
 	display: none;
 }
 
+.map-popup iframe{
+	border: 0;
+}
+
 .menu-popup-wrapper{
 	display: none;
 	grid-template-columns: 1fr 1fr;
