@@ -14,9 +14,9 @@
 	font-style: normal;
 	font-weight: 800;
 	src:local('Gilroy'),
-		url('../fonts/gilroy/gilroyextrabold-webfont.woff2') format('woff2'),
-		url('../fonts/gilroy/gilroyextrabold-webfont.woff') format('woff'),
-		url('../fonts/gilroy/Gilroyextrabold.ttf') format('ttf');
+		url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
+		url('../fonts/Gilroy-Extrabold.woff') format('woff'),
+		url('../fonts/Gilroy-Extrabold.ttf') format('ttf');
 	font-display: swap;
 	}
 
@@ -25,9 +25,9 @@
 	font-style: normal;
 	font-weight: 300;
 	src:local('Gilroy'),
-		url('../fonts/gilroy/gilroylight-webfont.woff2') format('woff2'), 
-		url('../fonts/gilroy/gilroylight-webfont.woff') format('woff'),
-		url('../fonts/gilroy/Gilroylight.ttf') format('ttf');
+		url('../fonts/Gilroy-Light.woff2') format('woff2'), 
+		url('../fonts/Gilroy-Light.woff') format('woff'),
+		url('../fonts/Gilroy-Light.ttf') format('ttf');
 	font-display: swap;
 }
 
