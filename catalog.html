@@ -83,7 +83,6 @@
 			</section>
 		</div>
 	</header>
-
 	<main class="main-wrapper">
 		<div class="container">
 			<h1 class="visually-hidden">Интернет-магазин Device</h1>
@@ -108,12 +107,11 @@
 							<button type="button" class="toggle toggle-min" aria-label="Ползунок минимальной цены"></button>
 							<button type="button" class="toggle toggle-max" aria-label="Ползунок максимальной цены"></button>
 						</div>
-
 						<div class="range-text">
 							<label class="visually-hidden" for="price-min">Минимальная цена</label>
-							<input class="price-min" type="text" name="price-min" id="price-min" placeholder="0">
+							<span class="text-desc">от</span><input class="price-min" type="text" name="price-min" id="price-min" placeholder="0">
 							<label class="visually-hidden" for="price-max">Максимальная цена</label>
-							<input class="price-max" type="text" name="price-max" id="price-max" placeholder="30000">
+							<span class="text-desc">до</span><input class="price-max" type="text" name="price-max" id="price-max" placeholder="5000">
 						</div>
 					</fieldset>
 					</fieldset>
@@ -122,34 +120,24 @@
 						<legend>Цвет</legend>
 						<ul class="color-list">
 							<li>
-								<label>
-									<input type="checkbox" name="black" value="black" checked>
-									Черный
-								</label>
+								<input class="visually-hidden" type="checkbox" id="color-black" name="black" value="black" checked>
+								<label for="color-black">Черный</label>
 							</li>
 							<li>
-								<label>
-									<input type="checkbox" name="white" value="white">
-									Белый
-								</label>
+								<input class="visually-hidden" type="checkbox" id="color-white" name="white" value="white">
+								<label for="color-white">Белый</label>
 							</li>
 							<li>
-								<label>
-									<input type="checkbox" name="blue" value="blue" checked>
-									Синий
-								</label>
+								<input class="visually-hidden" type="checkbox" id="color-blue" name="blue" value="blue" checked>
+								<label for="color-blue">Синий</label>
 							</li>
 							<li>
-								<label>
-									<input type="checkbox" name="red" value="red" checked>
-									Красный
-								</label>
+								<input class="visually-hidden" type="checkbox" id="color-red" name="red" value="red" checked>
+								<label for="color-red">Красный</label>
 							</li>
 							<li>
-								<label>
-									<input type="checkbox" name="pink" value="pink">
-									Розовый
-								</label>
+								<input class="visually-hidden" type="checkbox" id="color-pink" name="pink" value="pink">
+								<label for="color-pink">Розовый</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -158,16 +146,12 @@
 						<legend>Bluetooth</legend>
 						<ul class="bluetooth-list">
 							<li>
-								<label>
-									<input type="radio" name="bluetooth" value="yes" checked>
-									Есть
-								</label>
+								<input class="visually-hidden" type="radio" id="with-bluetooth" name="bluetooth" value="yes" checked>
+								<label for="with-bluetooth">Есть</label>
 							</li>
 							<li>
-								<label>
-									<input type="radio" name="bluetooth" value="no">
-									Нет
-								</label>
+								<input class="visually-hidden" type="radio" id="without-bluetooth" name="bluetooth" value="no">
+								<label for="without-bluetooth">Нет</label>
 							</li>
 						</ul>
 					</fieldset>
@@ -248,8 +232,7 @@
 			</ul>
 		</div>
 	</main>
-
-<footer class="footer">
+	<footer class="footer">
 		<div class="container">
 			<a class="footer-logo" href="index.html"><img src="img/logo-footer.svg" width="163" height="35" alt="логотип"></a>
 			<div class="footer-user">
@@ -291,7 +274,6 @@
 					</a>
 				</span>
 			</div>
-
 			<p class="footer-address">г. Москва, ул. Строителей, 15</p>
 			<nav class="menu-footer">
 				<ul>
@@ -301,15 +283,14 @@
 				</ul>
 			</nav>
 			<p class="footer-telephone">Тел.: <a href="tel+74954959595" class="call-us">+7 (495) 495-95-95</a></p>
-
 			<ul class="social">
 				<li><a href="#" class="facebook"><span class="visually-hidden">Facebook</span></a></li>
 				<li><a href="#" class="instagram"><span class="visually-hidden">Instagram</span></a></li>
 				<li><a href="#" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
 			</ul>
-
 			<a class="developed-by" href="#"><img src="img/logo-html.png" alt="Разработчик" width="27" height="34"/></a>
 		</div>
 	</footer>
+	<script src="js/script.js"></script>
 </body>
 </html>
