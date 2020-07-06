@@ -96,86 +96,96 @@
 		</div>
 		<div class="wide-left-container">
 			<section class="filter">
-				<h3>Фильтр:</h3>
-				<form action="https://echo.htmlacademy.ru/" method="get">
-					<fieldset class="filter-price">
-						<legend>Стоимость:</legend>					
-						<div class="range-input">
-							<div class="scale">
-								<div class="bar"></div>
+				<div class="filter-header">
+					<h3>Фильтр:</h3>
+				</div>
+				<div class="filter-form">
+					<form action="https://echo.htmlacademy.ru/" method="get">
+						<fieldset class="filter-price">
+							<legend>Стоимость:</legend>					
+							<div class="range-input">
+								<div class="scale">
+									<div class="bar"></div>
+								</div>
+								<button type="button" class="toggle toggle-min" aria-label="Ползунок минимальной цены"></button>
+								<button type="button" class="toggle toggle-max" aria-label="Ползунок максимальной цены"></button>
 							</div>
-							<button type="button" class="toggle toggle-min" aria-label="Ползунок минимальной цены"></button>
-							<button type="button" class="toggle toggle-max" aria-label="Ползунок максимальной цены"></button>
-						</div>
-						<div class="range-text">
-							<label class="visually-hidden" for="price-min">Минимальная цена</label>
-							<span class="text-desc">от</span><input class="price-min" type="text" name="price-min" id="price-min" placeholder="0">
-							<label class="visually-hidden" for="price-max">Максимальная цена</label>
-							<span class="text-desc">до</span><input class="price-max" type="text" name="price-max" id="price-max" placeholder="5000">
-						</div>
-					</fieldset>
-					</fieldset>
+							<div class="range-text">
+								<label class="visually-hidden" for="price-min">Минимальная цена</label>
+								<span class="text-desc">от</span><input class="price-min" type="text" name="price-min" id="price-min" placeholder="0">
+								<label class="visually-hidden" for="price-max">Максимальная цена</label>
+								<span class="text-desc">до</span><input class="price-max" type="text" name="price-max" id="price-max" placeholder="5000">
+							</div>
+						</fieldset>
+						</fieldset>
 
-					<fieldset class="filter-color">
-						<legend>Цвет</legend>
-						<ul class="color-list">
-							<li>
-								<input class="visually-hidden" type="checkbox" id="color-black" name="black" value="black" checked>
-								<label for="color-black">Черный</label>
-							</li>
-							<li>
-								<input class="visually-hidden" type="checkbox" id="color-white" name="white" value="white">
-								<label for="color-white">Белый</label>
-							</li>
-							<li>
-								<input class="visually-hidden" type="checkbox" id="color-blue" name="blue" value="blue" checked>
-								<label for="color-blue">Синий</label>
-							</li>
-							<li>
-								<input class="visually-hidden" type="checkbox" id="color-red" name="red" value="red" checked>
-								<label for="color-red">Красный</label>
-							</li>
-							<li>
-								<input class="visually-hidden" type="checkbox" id="color-pink" name="pink" value="pink">
-								<label for="color-pink">Розовый</label>
-							</li>
-						</ul>
-					</fieldset>
+						<fieldset class="filter-color">
+							<legend>Цвет</legend>
+							<ul class="color-list">
+								<li>
+									<input class="visually-hidden" type="checkbox" id="color-black" name="black" value="black" checked>
+									<label for="color-black">Черный</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" id="color-white" name="white" value="white">
+									<label for="color-white">Белый</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" id="color-blue" name="blue" value="blue" checked>
+									<label for="color-blue">Синий</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" id="color-red" name="red" value="red" checked>
+									<label for="color-red">Красный</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="checkbox" id="color-pink" name="pink" value="pink">
+									<label for="color-pink">Розовый</label>
+								</li>
+							</ul>
+						</fieldset>
 
-					<fieldset class="filter-bluetooth">
-						<legend>Bluetooth</legend>
-						<ul class="bluetooth-list">
-							<li>
-								<input class="visually-hidden" type="radio" id="with-bluetooth" name="bluetooth" value="yes" checked>
-								<label for="with-bluetooth">Есть</label>
-							</li>
-							<li>
-								<input class="visually-hidden" type="radio" id="without-bluetooth" name="bluetooth" value="no">
-								<label for="without-bluetooth">Нет</label>
-							</li>
-						</ul>
-					</fieldset>
-					<button type="submit" class="control filter-button">Показать</button>
-				</form>
+						<fieldset class="filter-bluetooth">
+							<legend>Bluetooth</legend>
+							<ul class="bluetooth-list">
+								<li>
+									<input class="visually-hidden" type="radio" id="with-bluetooth" name="bluetooth" value="yes" checked>
+									<label for="with-bluetooth">Есть</label>
+								</li>
+								<li>
+									<input class="visually-hidden" type="radio" id="without-bluetooth" name="bluetooth" value="no">
+									<label for="without-bluetooth">Нет</label>
+								</li>
+							</ul>
+						</fieldset>
+						<button type="submit" class="control filter-button">Показать</button>
+					</form>
+				</div>
 			</section>
 
 			<section class="sort">
 				<h3>Сортировка:</h3>
-				<a href="#" class="active sort-type">По цене</a>
-				<a href="#">По типу</a>
-				<a href="#">По популярности</a>
-				<a href="#" class="sort-dir dir-up active">
-					<span class="visually-hidden">По возрастанию</span>
-					<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M5.5 0L11 10L0 10" fill= "var(--basic-black, #000000)"/>
-					</svg> 
-				</a>
-				<a href="#" class="sort-dir dir-down">
-					<span class="visually-hidden">По убыванию</span>
-					<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-						<path d="M5.5 10L0 0H11" fill="var(--basic-black, #000000)"/>
-					</svg> 
-				</a>
+				<div class="sort-list">
+					<div class="sort-type-list">
+					<a class="sort-type active" href="#">По цене</a>
+					<a class="sort-type" href="#">По типу</a>
+					<a class="sort-type" href="#">По популярности</a>
+					</div>
+					<div class="sort-dir-list">
+						<a href="#" class="sort-dir dir-up active">
+							<span class="visually-hidden">По возрастанию</span>
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 0L11 10L0 10" fill= "var(--basic-black, #000000)"/>
+							</svg> 
+						</a>
+						<a href="#" class="sort-dir dir-down">
+							<span class="visually-hidden">По убыванию</span>
+							<svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M5.5 10L0 0H11" fill="var(--basic-black, #000000)"/>
+							</svg> 
+						</a>
+					</div>
+				</div>
 			</section>
 
 			<section class="content">
