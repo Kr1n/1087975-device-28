@@ -1,15 +1,15 @@
 .visually-hidden{
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  overflow: hidden;
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	clip: rect(0 0 0 0);
+	overflow: hidden;
 }
 
-@font-face {
+@font-face{
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: 800;
@@ -20,7 +20,7 @@
 	font-display: swap;
 	}
 
-@font-face {
+@font-face{
 	font-family: 'Gilroy';
 	font-style: normal;
 	font-weight: 300;
@@ -125,12 +125,12 @@
 
 .info::before,
 .contact::before{
-    content: "";
-    position: absolute;
-    width: 80px;
-    height: 7px;
-    background-color: var(--basic-black, #000000);
-    top: -4px;
+	content: "";
+	position: absolute;
+	width: 80px;
+	height: 7px;
+	background-color: var(--basic-black, #000000);
+	top: -4px;
 }
 
 .info li{
@@ -160,12 +160,12 @@ body{
 }
 
 img{
-  max-width: 100%;
-  height: auto;
+	max-width: 100%;
+	height: auto;
 }
 
 a{
-  text-decoration: none;
+	text-decoration: none;
 }
 
 .container{
@@ -268,9 +268,9 @@ a{
 	margin: 0;
 	list-style: none;
 	grid-gap: 40px;
-    margin-left: 72px;
-    margin-top: 70px;
-    margin-bottom: 32px;
+	margin-left: 72px;
+	margin-top: 70px;
+	margin-bottom: 32px;
 }
 
 .item-list .item{
@@ -1748,7 +1748,7 @@ input[type="radio"]:checked:active{
 	height: 164px;
 	background-image: url("../img/service-delivery.png");
 	top: 0px;
-    right: 0px;
+	right: 0px;
 }
 
 .warranty.active::after{
@@ -1889,7 +1889,7 @@ input[type="radio"]:checked:active{
 	top: -2px;
 }
 
-.color-list input:checked+label::before {
+.color-list input:checked+label::before{
 	background-image: url("../img/form/checkbox-on.svg");
 }
 
@@ -1915,7 +1915,7 @@ input[type="radio"]:checked:active{
 	top: -2px;
 }
 
-.bluetooth-list input:checked+label::before {
+.bluetooth-list input:checked+label::before{
 	background-image: url("../img/form/radio-on.svg");
 }
 
@@ -1924,16 +1924,16 @@ input[type="radio"]:checked:active{
 }
 
 @keyframes snake{
-	0%, 100%                  {transform: translateX(0);}
-	10%, 30%, 50%, 70%, 90%   {transform: translateX(-10px);}
-	20%, 40%, 60%, 80%        {transform: translateX(10px);}
+	0%, 100%					{transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90%		{transform: translateX(-10px);}
+	20%, 40%, 60%, 80%			{transform: translateX(10px);}
 }
 
 @keyframes bounce{
-	0%    {transform: translateY(-2000px);}
-	70%   {transform: translateY(30px);}
-	90%   {transform: translateY(-10px);}
-	100%  {transform: translateY(0);}
+	0%		{transform: translateY(-2000px);}
+	70%		{transform: translateY(30px);}
+	90%		{transform: translateY(-10px);}
+	100%	{transform: translateY(0);}
 }
 
 .write-us.write-us-show{
