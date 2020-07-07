@@ -277,6 +277,26 @@ a{
 	position: relative;
 }
 
+.item-list .item.new::after{
+	position: absolute;
+	content: "new";
+	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-weight: 800;
+	font-size: 12px;
+	line-height: 15px;
+	text-transform: uppercase;
+	color: var(--form-grey, rgba(0, 0, 0, 0.3));
+	width: 62px;
+	height: 62px;
+	top: 29px;
+	right: 27px;
+	border-radius: 50%;
+	border: 2px solid var(--form-grey, rgba(0, 0, 0, 0.3));
+	text-align: center;
+	padding-top: 21px;
+	box-sizing: border-box;
+}
+
 .item:hover .item-buttons{
 	display: block;
 }
