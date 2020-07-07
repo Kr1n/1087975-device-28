@@ -6,12 +6,12 @@ if (map_popup && map){
 	map.addEventListener("click", function(evt){
 		evt.preventDefault();
 		map_popup.classList.add("map-show");
-	})
+	});
 
 	map_close.addEventListener("click", function(evt){
 		evt.preventDefault();
 		map_popup.classList.remove("map-show");
-	})
+	});
 }
 
 let writeus = document.querySelector(".write-us-button");
@@ -65,7 +65,7 @@ if (writeus && writeus_popup){
 		else{
 			writeus_name.focus();
 		}		
-	})
+	});
 	writeus_close.addEventListener("click", function(evt){
 		evt.preventDefault();
 		writeus_popup.classList.remove("write-us-show");
@@ -87,12 +87,11 @@ window.addEventListener("keydown", function(evt){
 			map_popup.classList.remove("map-show");
 		}
 	}
-})
+});
 
 let slider = document.querySelector(".slider-wrapper");
 
 if (slider){
-
 	let slider_items = slider.querySelectorAll(".slider-item");
 	let slider_buttons = slider.querySelectorAll(".slider-buttons button");
 	let activeSlide = 0;
@@ -108,12 +107,12 @@ if (slider){
 	slider_buttons.forEach((element, i) => 
 		element.addEventListener("click", function(evt){
 			evt.preventDefault();
-		    if (element.classList.contains("active")){
-		      return;
+			if (element.classList.contains("active")){
+				return;
 			}
-		    changeSlide(i);
+			changeSlide(i);	
 		})
-	)
+	);
 }
 
 let service_control_list = document.querySelectorAll(".services-control .control");
