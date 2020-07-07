@@ -88,18 +88,17 @@
 	background-color: var(--special-yellow, #F7E296); 
 	position: absolute;
 	z-index: 2;
-	padding-top: 30px;
-	padding-bottom: 8px;
-	padding-right: 60px;
 	left: 0;
 	width: 100%;
+	padding-top: 30px;
+	padding-bottom: 26px;
 	padding-left: 60px;
+	padding-right: 60px;
 	box-sizing: border-box;
 }
 
 .menu-catalog:hover .submenu-wrapper{
 	display: grid;
-	padding-right: 60px;
 }
 
 .submenu-wrapper:hover{
@@ -108,18 +107,18 @@
 
 
 .submenu li{
-	margin-bottom: 20px;
+	margin-bottom: 16px;
 }
 
 .wrapper-column-2{
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	grid-gap: 40px;
-	margin-bottom: 81px;
+	margin-bottom: 77px;
 }
 
 .info{
-	padding-top: 57px;
+	padding-top: 52px;
 	position: relative;
 }
 
@@ -130,7 +129,7 @@
     width: 80px;
     height: 7px;
     background-color: var(--basic-black, #000000);
-    top: -2px;
+    top: -4px;
 }
 
 .info li{
@@ -150,7 +149,7 @@
 }
 
 .contact{
-	padding-top: 57px;
+	padding-top: 52px;
 	position: relative;
 }
 
@@ -227,7 +226,7 @@ a{
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 16px;
-	line-height: 22px;
+	line-height: 24px;
 	letter-spacing: 0.05em;
 	text-align: right;
 }
@@ -931,18 +930,16 @@ a{
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 16px;
-	line-height: 42px;
+	line-height: 43px;
 	list-style: none;
 	margin: 0;
 	padding: 0;
-	margin-top: -14px;
+	padding-top: 12px;
 	margin-left: 32px;
 	margin-bottom: 61px;
 }
 
-.services p,
-.info p,
-.contact p{
+.services p{
 	font-family: 'Open Sans', 'Arial', sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
@@ -955,9 +952,18 @@ a{
 
 .info p,
 .contact p{
-	margin: 0;
+	font-family: 'Open Sans', 'Arial', sans-serif;
+	color: var(--basic-black, #000000);
+	font-weight: 300;
+	font-size: 15px;
+	line-height: 28px;
 	padding: 0;
+	margin: 0;
 	margin-bottom: 40px;
+}
+
+.info p{
+	margin-right: 85px;
 }
 
 .wide-left-container{
@@ -987,7 +993,7 @@ a{
 .contact h2{
 	margin: 0;
 	padding: 0;
-	margin-bottom: 38px;
+	margin-bottom: 41px;
 }
 
 .main-content > h2{
@@ -1100,6 +1106,7 @@ a{
 .slider-info{
 	display: grid;
 	grid-template-columns: 1fr 1fr 1fr;
+	margin: 0;
 }
 
 .slider .slider-info{
@@ -1130,9 +1137,9 @@ a{
 	position: relative;
 	padding-left: 89px;
 	padding-right: 47px;
-	padding-bottom: 96px;
 	padding-top: 5px;
 	background: linear-gradient(to bottom, var(--special-yellow, #F7E296) 0, var(--special-yellow, #F7E296) 134px ,transparent 134px);
+	min-height: 605px;
 }
 
 .slider-buttons{
@@ -1311,7 +1318,7 @@ a.menu-catalog{
 .logo{
 	grid-column-start: 1;
 	grid-column-end: -1;
-	margin-bottom: 9px;
+	margin-bottom: 5px;
 	margin-right: auto;
 }
 
@@ -1664,7 +1671,7 @@ input[type="radio"]:checked:active{
 .services{
 	position: relative;
 	width: 100%;
-	margin-top: 82px;
+	margin-top: 84px;
 	min-height: 388px;
 	overflow: hidden;
 }
@@ -1898,4 +1905,28 @@ input[type="radio"]:checked:active{
 
 .map-show{
 	display: block;
+}
+
+@keyframes snake{
+	0%, 100%                  {transform: translateX(0);}
+	10%, 30%, 50%, 70%, 90%   {transform: translateX(-10px);}
+	20%, 40%, 60%, 80%        {transform: translateX(10px);}
+}
+
+@keyframes bounce{
+	0%    {transform: translateY(-2000px);}
+	70%   {transform: translateY(30px);}
+	90%   {transform: translateY(-10px);}
+	100%  {transform: translateY(0);}
+}
+
+.write-us.write-us-show{
+	display: grid;
+	animation-name: bounce;
+	animation-duration: 0.6s;
+}
+
+.write-us.modal-error{
+	animation-name: snake;
+	animation-duration: 0.6s;
 }
