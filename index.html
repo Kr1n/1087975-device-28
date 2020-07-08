@@ -4,8 +4,8 @@
 	<meta charset="utf-8">
 	<title>HTML Academy: Девайс</title>
 	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
-	<link rel="stylesheet" type="text/css" href="css/normalize.css">
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/normalize.min.css">
+	<link rel="stylesheet" type="text/css" href="css/style.min.css">
 </head>
 
 <body class="page-body">
@@ -87,7 +87,7 @@
 				<h1 class="visually-hidden">Интернет-магазин Device</h1>
 				<div class="slider-wrapper">
 					<ul class="slider">
-						<li class="slider-item active">
+						<li class="slider-item active slider-monopod">
 							<a href="#" class="slider-image"><img src="img/slider-monopod.png" alt="монопод" width="384" height="486"></a>
 							<h2 class="slider-header-monopod">Делай селфи,<br>как Бен Стиллер!</h2>
 							<p>Самая длинная палка для селфи доступна в нашем магазине. Восемь (Восемь, Карл!) метров длиной и весом всего 5 килограмм.</p>
@@ -108,7 +108,7 @@
 							</dl>
 						</li>
 
-						<li class="slider-item">
+						<li class="slider-item slider-band">
 							<a href="#" class="slider-image"><img src="img/slider-band.png" alt="умный браслет" width="345" height="485"></a>
 							<h2 class="slider-header-band">Худеем<br>правильно!</h2>
 							<p>Мотивирующие фитнес-браслеты помогут найти в себе силы<br>не пропускать занятия и соблюдать диету.</p>
@@ -121,7 +121,7 @@
 							</dl>
 						</li>
 
-						<li class="slider-item">
+						<li class="slider-item slider-quadro">
 							<a href="#" class="slider-image"><img src="img/slider-quadro.png" alt="квадрокоптер" width="526" height="334"></a>
 							<h2 class="slider-header-quadro">Порхает как бабочка, жалит как пчела!</h2>
 							<p>Этот обычный, на первый взгляд, квадрокоптер оснащен<br>мощным лазером, замаскированным под стандартную камеру.</p>
@@ -157,9 +157,9 @@
 			<div class="services">
 				<div class="container">
 					<ul class="services-controls">
-						<li class="services-control"><button type="button" class="control active" value="delivery">Доставка</button></li>
-						<li class="services-control"><button type="button" class="control" value="warranty">Гарантия</button></li>
-						<li class="services-control"><button type="button" class="control" value="credit">Кредит</button></li>
+						<li class="services-control"><button class="control button-delivery active" type="button" value="delivery">Доставка</button></li>
+						<li class="services-control"><button class="button-warranty control" type="button" value="warranty">Гарантия</button></li>
+						<li class="services-control"><button class="button-credit control" type="button" value="credit">Кредит</button></li>
 					</ul>
 					<ul class="services-items">
 						<li class="services-item delivery active">
@@ -261,7 +261,7 @@
 				<li><a href="#" class="twitter"><span class="visually-hidden">Twitter</span></a></li>
 			</ul>
 
-			<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.png" alt="Разработчик" width="27" height="34"/></a>
+			<a class="developed-by" href="https://htmlacademy.ru/intensive/htmlcss"><img src="img/logo-html.svg" alt="Разработчик" width="27" height="34"/></a>
 		</div>
 	</footer>
 
@@ -269,7 +269,7 @@
 		<label>Ваше имя:
 			<input type="text" id="writeus-name" name="name" placeholder="Имя Фамилия">
 		</label>
-		<label>Ваше email:
+		<label>Ваш e-mail:
 			<input type="email" id="writeus-email" name="email" placeholder="email@example.com">
 		</label>
 		<label class="popup-textarea" for="writeus-letter">Текст письма:</label>
@@ -293,6 +293,6 @@
 			</button>
 		</div>
 	</div>
-	<script src="js/script.js"></script>
+	<script src="js/script.min.js"></script>
 </body>
 </html>
