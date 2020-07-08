@@ -737,6 +737,10 @@ a{
 	opacity: 0.3;
 }
 
+.button-close svg{
+	padding-top: 5px;
+}
+
 .write-us input,
 .write-us textarea{
 	font-family: 'Gilroy', 'Arial', sans-serif;
