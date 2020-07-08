@@ -433,6 +433,10 @@ a{
 	width: 60px;
 }
 
+.range-text input::placeholder{
+	color: var(--basic-black, #000000);
+}
+
 .text-desc{
 	line-height: 24px;
 }
