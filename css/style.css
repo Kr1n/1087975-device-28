@@ -1616,21 +1616,17 @@ a{
 	opacity: 1;
 }
 
-input[type="radio"]:disabled,
-input[type="radio"].disabled,
-input[type="checkbox"]:disabled,
-input[type="checkbox"].disabled{
+.filter-form .filter-input :disabled,
+.filter-form .filter-input.disabled,{
 	opacity: 0.25;
 }
 
-label:disabled,
-label.disabled{
+.filter-form label.disabled{
 	color: var(--input-text-disabled, #A6A6A6);
 }
 
-input[type="radio"]:hover,
-input[type="checkbox"]:hover,
-input[type="radio"]:checked:active{
+.filter-form .filter-input:hover,
+.filter-form .filter-input:checked:active{
 	opacity: 0.6;
 }
 
