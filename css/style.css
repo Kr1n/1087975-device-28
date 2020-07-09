@@ -369,6 +369,7 @@ a{
 	opacity: 0.3;
 	padding-top: 26px;
 	display: inline-block;
+	vertical-align: baseline;
 }
 
 .sort .active{
@@ -1657,6 +1658,7 @@ input[type="radio"]:checked:active{
 	padding: 13px 17px;
 	margin-left: -4px;
 	margin-top: auto;
+	vertical-align: bottom;
 }
 
 .search-input:focus ~ .search-button,
@@ -1690,18 +1692,6 @@ input[type="radio"]:checked:active{
 .search-button:focus{
 	display: inline-block;
 	outline: auto;
-}
-
-.control1::before{
-	position: absolute;
-	content: "";
-	display: inline-block;
-	background-color: var(--special-yellow-dark, #F0C52E);
-	height: 8px;
-	left: 0;
-	top:calc(50% - 4px);
-	width: 100%;
-	z-index: -1;
 }
 
 .write-us .control::before{
