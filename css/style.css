@@ -942,7 +942,7 @@ a{
 
 .menu-footer a{
 	font-family: 'Gilroy', 'Arial', sans-serif;
-	color: var(--basic-white, #fffffff);
+	color: var(--basic-white, #ffffff);
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -953,7 +953,7 @@ a{
 .footer p,
 .call-us{
 	font-family: 'Open Sans', 'Arial', sans-serif;
-	color: var(--basic-white, #fffffff);
+	color: var(--basic-white, #ffffff);
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
