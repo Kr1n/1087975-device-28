@@ -183,13 +183,13 @@ a{
 
 .page-body{
 	display: grid;
-	grid-template-rows: 206px auto auto;
+	grid-template-rows: auto auto auto;
 }
 
 .main-header{
 	padding: 0;
 	margin: 0;
-	padding-top: 63px;
+	padding-top: 43px;
 	font-family: 'Gilroy', 'Arial', sans-serif;
 	color: var(--basic-black, #000000);
 	font-style: normal;
@@ -220,14 +220,22 @@ a{
 	padding: 0;
 	margin: 0;
 	display: grid;
-	grid-template-columns: auto -webkit-min-content -webkit-min-content -webkit-min-content auto;
-	grid-template-columns: auto min-content min-content min-content auto;
+	grid-template-columns: 120px 520px 120px;
 	grid-row-start: -2;
 	grid-row-end: -1;
 	grid-column-start: 3;
 	grid-column-end: 4;
 	margin-left: 72px;
 	margin-bottom: 78px;
+}
+
+.pagination-numbers{
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,40px);
+	justify-content: center;
 }
 
 .item .price{
@@ -577,6 +585,10 @@ a{
 	background: linear-gradient(to bottom, transparent 40px, var(--special-yellow, #F7E296) 40px, var(--special-yellow, #F7E296) 100%);
 }
 
+.index .header-content{
+	padding-bottom: 29px;
+}
+
 .icon-user,
 .icon-chart,
 .icon-cart,
@@ -620,10 +632,8 @@ a{
 
 .menu{
 	display: grid;
-	grid-template-columns: 50%;
-	grid-auto-flow: column;
-	grid-auto-columns: -webkit-max-content;
-	grid-auto-columns: max-content;
+	grid-template-columns: 50% 50%;
+	grid-auto-columns: auto;
 	list-style: none;
 	padding: 0;
 	margin: 0;
@@ -634,11 +644,12 @@ a{
 }
 
 .menu-garanty{
-	margin-left: 35px;
+	margin-left: 6px;
 }
 
 .menu-contacts{
-	margin-left: 108px;
+	text-align: right;
+	margin-right: -3px;
 }
 
 .header-content a{
@@ -1387,6 +1398,15 @@ a{
 	margin: 0;
 	padding: 0;
 	margin-right: 80px;
+}
+
+.other-menu ul{
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: grid;
+	grid-template-columns: 33.3% 33.4% 33.3%;
+	grid-row-gap: 10px;
 }
 
 .menu-catalog > a{
