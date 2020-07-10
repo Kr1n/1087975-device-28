@@ -449,6 +449,14 @@ a{
 	width: 60px;
 }
 
+.range-text input::-webkit-input-placeholder{
+	color: var(--basic-black, #000000);
+}
+
+.range-text input::-moz-placeholder{
+	color: var(--basic-black, #000000);
+}
+
 .range-text input::placeholder{
 	color: var(--basic-black, #000000);
 }
@@ -1194,6 +1202,7 @@ a{
 	grid-column-gap: 27px;
 	grid-column-gap: 27px;
 	display: grid;
+	grid-template-columns: -webkit-max-content -webkit-max-content;
 	grid-template-columns: max-content max-content;
 }
 
@@ -1227,6 +1236,7 @@ a{
 
 .slider-info{
 	margin: 0;
+	grid-auto-rows: -webkit-max-content;
 	grid-auto-rows: max-content;
 }
 
