@@ -17,24 +17,24 @@
 }
 
 @font-face{
-	font-family: 'Gilroy';
+	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 800;
-	src:local('Gilroy'),
-		url('../fonts/Gilroy-Extrabold.woff2') format('woff2'),
-		url('../fonts/Gilroy-Extrabold.woff') format('woff'),
-		url('../fonts/Gilroy-Extrabold.ttf') format('ttf');
+	src:local("Gilroy"),
+		url("../fonts/Gilroy-Extrabold.woff2") format("woff2"),
+		url("../fonts/Gilroy-Extrabold.woff") format("woff"),
+		url("../fonts/Gilroy-Extrabold.ttf") format("ttf");
 	font-display: swap;
 	}
 
 @font-face{
-	font-family: 'Gilroy';
+	font-family: "Gilroy";
 	font-style: normal;
 	font-weight: 300;
-	src:local('Gilroy'),
-		url('../fonts/Gilroy-Light.woff2') format('woff2'), 
-		url('../fonts/Gilroy-Light.woff') format('woff'),
-		url('../fonts/Gilroy-Light.ttf') format('ttf');
+	src:local("Gilroy"),
+		url("../fonts/Gilroy-Light.woff2") format("woff2"), 
+		url("../fonts/Gilroy-Light.woff") format("woff"),
+		url("../fonts/Gilroy-Light.ttf") format("ttf");
 	font-display: swap;
 }
 
@@ -190,7 +190,7 @@ a{
 	padding: 0;
 	margin: 0;
 	padding-top: 43px;
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-style: normal;
 	font-weight: 800;
@@ -202,7 +202,7 @@ a{
 }
 
 .pagination a{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	text-decoration: none;
 	font-weight: 800;
@@ -239,7 +239,7 @@ a{
 }
 
 .item .price{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 16px;
@@ -249,7 +249,7 @@ a{
 }
 
 .item-name{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 18px;
@@ -258,7 +258,7 @@ a{
 }
 
 .item .add-favorite{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 13px;
@@ -321,7 +321,7 @@ a{
 .item-list .item.new::after{
 	position: absolute;
 	content: "new";
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 12px;
 	line-height: 15px;
@@ -375,7 +375,7 @@ a{
 }
 
 .sort a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	text-decoration: none;
 	font-weight: normal;
@@ -395,7 +395,7 @@ a{
 	margin: 0;
 	min-height: 70px;
 	box-sizing: border-box;
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-style: normal;
 	font-weight: 800;
 	font-size: 16px;
@@ -433,7 +433,7 @@ a{
 
 .filter-color,
 .filter-bluetooth{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 14px;
@@ -488,7 +488,7 @@ a{
 
 .filter-price,
 .filter-price input{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 14px;
@@ -496,7 +496,7 @@ a{
 }
 
 .filter legend{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 14px;
@@ -508,7 +508,7 @@ a{
 .filter h2{
 	padding: 0;
 	margin: 0;
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 16px;
@@ -567,7 +567,7 @@ a{
 }
 
 .breadcrumbs a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 14px;
@@ -616,7 +616,7 @@ a{
 }
 
 .header-user a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 15px;
@@ -661,7 +661,7 @@ a{
 }
 
 .header-content a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	text-decoration: none;
 	font-weight: 300;
@@ -676,7 +676,7 @@ a{
 }
 
 .menu a{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-weight: 800;
 	font-size: 18px;
 	line-height: 22px;
@@ -686,7 +686,7 @@ a{
 }
 
 .submenu a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 15px;
@@ -765,7 +765,7 @@ a{
 
 .write-us input,
 .write-us textarea{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	background-color: var(--write-us-background, #F2F2F2);
 	color: var(--write-us-text, rgba(0, 0, 0, 0.4));
 	font-size: 14px;
@@ -795,7 +795,7 @@ a{
 }
 
 .write-us label{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 18px;
@@ -903,7 +903,7 @@ a{
 }
 
 .footer-user a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--footer-menu, rgba(255, 255, 255, 0.7));
 	font-weight: 300;
 	font-size: 15px;
@@ -949,7 +949,7 @@ a{
 }
 
 .footer-guest a{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--footer-menu, rgba(255, 255, 255, 0.7));
 	font-weight: 300;
 	font-size: 15px;
@@ -962,7 +962,7 @@ a{
 }
 
 .menu-footer a{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-white, #ffffff);
 	font-weight: 800;
 	font-size: 18px;
@@ -973,7 +973,7 @@ a{
 
 .footer p,
 .call-us{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-white, #ffffff);
 	font-weight: 300;
 	font-size: 15px;
@@ -1025,7 +1025,7 @@ a{
 }
 
 .info ul{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 16px;
@@ -1039,7 +1039,7 @@ a{
 }
 
 .services p{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 15px;
@@ -1051,7 +1051,7 @@ a{
 
 .info p,
 .contact p{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 15px;
@@ -1075,7 +1075,7 @@ a{
 .info h2,
 .contact h2,
 .main-content > h2{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 47px;
@@ -1172,7 +1172,7 @@ a{
 }
 
 .popular a{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	text-decoration: none;
 	font-weight: 800;
@@ -1241,7 +1241,7 @@ a{
 }
 
 .slider .slider-info{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 13px;
@@ -1251,7 +1251,7 @@ a{
 }
 
 .slider dt{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 36px;
@@ -1314,7 +1314,7 @@ a{
 }
 
 .control{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 18px;
@@ -1348,7 +1348,7 @@ a{
 }
 
 .slider h2{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 800;
 	font-size: 47px;
@@ -1370,7 +1370,7 @@ a{
 	top: 34px;
 }
 .slider-item.active h2::after{
-	font-family: 'Gilroy', 'Arial', sans-serif;
+	font-family: "Gilroy", "Arial", sans-serif;
 	font-size: 179px;
 	line-height: 219px;
 	font-style: normal;
@@ -1400,7 +1400,7 @@ a{
 }
 
 .slider p{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, #000000);
 	font-weight: 300;
 	font-size: 15px;
@@ -1454,7 +1454,7 @@ a{
 }
 
 .search-input{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	color: var(--basic-black, black);
 	opacity: 0.3;
 	font-weight: 300;
@@ -1691,7 +1691,7 @@ a{
 }
 
 .search-button{
-	font-family: 'Open Sans', 'Arial', sans-serif;
+	font-family: "Open Sans", "Arial", sans-serif;
 	font-weight: 300;
 	font-size: 15px;
 	line-height: 20px;
@@ -1712,6 +1712,7 @@ a{
 .search-button:focus{
 	border-radius: 0;
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .search label{
@@ -1728,17 +1729,20 @@ a{
 	background-color: var(--basic-black,#000000);
 	color: var(--basic-white,#ffffff);
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .search-button:active{
 	background-color: var(--basic-black,#000000);
 	color: var(--form-greylight, rgba(255, 255, 255, 0.3));
 	display: inline-block;
+	vertical-align: bottom;
 }
 
 .search-button:focus{
 	display: inline-block;
 	outline: auto;
+	vertical-align: bottom;
 }
 
 .write-us .control::before{
